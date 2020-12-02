@@ -15,6 +15,7 @@
 ================================================== -->
     <link href="./favicon-32x32.png" rel="shortcut icon" type="image/x-icon" />
 
+
     <!-- CSS
 ================================================== -->
     <link rel="stylesheet" href="css/bootstrap.css" />
@@ -28,7 +29,7 @@
 
     <!-- Google Web fonts
 ================================================== -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet" />
 
     <!-- Font Icons
 ================================================== -->
@@ -69,19 +70,22 @@
                             <p><span>Name:</span> Victor Itah Okwong </p>
                         </li>
                         <li>
-                            <p><span>Birthday:</span>06 May</p>
+                            <p><span>Birthday:</span> 06 May</p>
                         </li>
                         <li>
-                            <p><span>Job:</span>Developer | Designer</p>
+                            <p><span>Job:</span> Software Developer</p>
                         </li>
                         <li>
-                            <p><span>Email:</span> victorokwong35@gmail.com</p>
+                            <p><span>Email:</span> Victorokwong35@gmail</p>
                         </li>
-                        <!-- <li><p><span>Skype:</span> henryrooney85</p></li> -->
+
                     </ul>
                     <div class="col-md-12">
-                        <button class="site-btn icon">Download Cv <i class="fa fa-download"
-                                aria-hidden="true"></i></button>
+                        <a href="/cv/My resume.pdf" download="Victor's Cv" id="cv-link">
+                            <button class="site-btn icon">
+                                Download Cv <i class="fa fa-download" aria-hidden="true"></i>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -104,13 +108,86 @@
                                         </li>
                                         <li class="tab"><a href="#resume">RESUME</a></li>
                                         <li class="tab"><a href="#portfolio">PORTFOLIO</a></li>
-                                        <li class="tab"><a href="#blog">FREELANCED FOR</a></li>
+                                        <li class="tab"><a href="#blog">CLIENTS</a></li>
                                         <li class="tab"><a href="#contact">CONTACT</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-4 col-sm-4 col-xs-8 dynamic">
-                                    <button class="pull-right site-btn icon hidden-xs">Hire Me<i
-                                            class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                                    <button class="pull-right site-btn icon hidden-xs" data-toggle="modal" data-target="#exampleModalCenter">Hire Me<i
+                                            class="fa fa-paper-plane" aria-hidden="true"></i>
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content modal_container">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <div class="hi-div">
+                                                        <img src="/images/Victor-image-normal.png" alt="">
+                                                        <span>Hi there, Kindly fill the information below</span>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form class="site-form">
+                                                        <div class="row" id="hire-me-contents">
+                                                            <div class="col-md-6">
+                                                                <input class="site-input" placeholder="Name">
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <input class="site-email" placeholder="E-mail">
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <input class="site-email" placeholder="Country">
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <input class="site-email" placeholder="State">
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <input class="site-email" placeholder="Company">
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <input class="site-email" placeholder="Industry">
+                                                            </div>
+                                                            
+                                                                <select class="select-list-1">
+                                                                    <option value="0">Job type</option>
+                                                                    <option value="1">Remote Front End Developer</option>
+                                                                    <option value="2">Full Time Software Developer</option> 
+                                                                    <option value="2">Contract Software Developer</option> 
+                                                                    <option value="2">Product Designer Ui/Ux</option> 
+                                                                    <option value="2">Freelance Creative Designer</option> 
+                                                                </select>
+                                                                <select class="select-list-2">
+                                                                    <option value="0">USD</option>
+                                                                    <option value="1">EURO</option>
+                                                                    <option value="2">NAIRA</option> 
+                                                                </select>
+                                                            
+                                                            
+                                                            <div class="col-md-12">
+                                                                <textarea class="site-area" placeholder="Message"></textarea>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary">Send</button>
+                                                            </div>
+
+                                                        </div>
+            
+                                                    </form>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
                                     <div class="hamburger pull-right hidden-lg hidden-md"><i class="fa fa-bars"
                                             aria-hidden="true"></i></div>
                                     <div class="hidden-md social-icons pull-right">
@@ -144,33 +221,29 @@
                                             <h2>About Me</h2>
                                         </div>
                                         <p class="top_30">
-                                            My name is Victor Itah. I'm a young Front End Engineer and designer based in
-                                            Lagos,
-                                            Nigeria.
+                                            My name is Victor Itah. I'm a young Front End Engineer and Creative Designer
+                                            based in
+                                            Lagos, Nigeria.
                                             I describe myself as a passionate designer and developer who loves coding,
                                             open source, designing and the web platform.
-                                            <br><br>
-
+                                        </p>
+                                        <p class="top_30">
                                             Aside from my job, I like to create and contribute to open source projects.
                                             This helps me to learn lots of stuff,
                                             grow as a designer, developer and support other open source projects. Also I
-                                            enjoy doing Ui/Ux personally because it give room for foundational layout,
-                                            guidelines as well as creativity exercise and approach before the actual
+                                            enjoy doing Ui/Ux personally because it gives room for foundational layout,
+                                            guidelines as well as creativity exercises and approach before the actual
                                             coding.
-                                            <br><br>
-
+                                        </p>
+                                        <p class="top_30">
                                             Throughout my career, I have always tried to ensure that the passion and
                                             enthusiasm for my work has shone through. I have found that it is
-                                            through a team that I have achieved my greatest potential.
+                                            through a team that I have achieved my greatest potential.<br>
 
                                             In all my work, I have relished these challenges and used them to fuel
                                             my ambition and maintain my own high standards.
-                                            <br><br>
-
-                                            In my free time you can find me gaming, studying or on tech
-                                            meetups and conference
-                                            <br><br>
                                         </p>
+
                                     </section>
                                 </div>
                                 <!-- My Services Section -->
@@ -187,8 +260,8 @@
                                                         <i class="flaticon-html"></i>
                                                     </div>
                                                     <span class="title">Web Development</span>
-                                                    <p class="little-text">Interactive Website design and development
-                                                        years.</p>
+                                                    <p class="little-text">I make interactive web designs and web
+                                                        development.</p>
                                                 </div>
                                             </div>
                                             <!-- a service -->
@@ -199,8 +272,8 @@
                                                     </div>
                                                     <span class="title">Ui/Ux</span>
                                                     <p class="little-text">
-                                                        Product design UI mockups and prototypes that clearly illustrate
-                                                        how sites function and look like.
+                                                        I design UI mockups and prototypes using Adobe Xd, Figma and
+                                                        Sketch.
                                                     </p>
                                                 </div>
                                             </div>
@@ -222,8 +295,8 @@
                                                         <i class="flaticon-vector"></i>
                                                     </div>
                                                     <span class="title">Graphic Design</span>
-                                                    <p class="little-text">I have been working on graphic design
-                                                        for 7 years.</p>
+                                                    <p class="little-text">I make creative designs and video animations
+                                                        for media output, web publishing and social marketing.</p>
                                                 </div>
                                             </div>
 
@@ -246,49 +319,49 @@
                                             <li>
                                                 <h3>Sketch</h3>
                                                 <div class="progress">
-                                                    <div class="percentage" style="width:60%;"></div>
+                                                    <div class="percentage" style="width:98%;"></div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <h3>Adobe Xd</h3>
                                                 <div class="progress">
-                                                    <div class="percentage" style="width:88%;"></div>
+                                                    <div class="percentage" style="width:98%;"></div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <h3>Figma</h3>
                                                 <div class="progress">
-                                                    <div class="percentage" style="width:88%;"></div>
+                                                    <div class="percentage" style="width:98%;"></div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <h3>Adobe Illustrator</h3>
                                                 <div class="progress">
-                                                    <div class="percentage" style="width:100%;"></div>
+                                                    <div class="percentage" style="width:98%;"></div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <h3>Adobe Indesign</h3>
                                                 <div class="progress">
-                                                    <div class="percentage" style="width:100%;"></div>
+                                                    <div class="percentage" style="width:98%;"></div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <h3>Adobe After-effects</h3>
                                                 <div class="progress">
-                                                    <div class="percentage" style="width:80%;"></div>
+                                                    <div class="percentage" style="width:98%;"></div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <h3>Adobe Premier Pro</h3>
                                                 <div class="progress">
-                                                    <div class="percentage" style="width:50%;"></div>
+                                                    <div class="percentage" style="width:98%;"></div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <h3>Adobe Animate</h3>
                                                 <div class="progress">
-                                                    <div class="percentage" style="width:50%;"></div>
+                                                    <div class="percentage" style="width:98%;"></div>
                                                 </div>
                                             </li>
 
@@ -299,6 +372,26 @@
                                             <h2>Code Skills</h2>
                                         </div>
                                         <ul class="skill-list">
+
+                                            <li>
+                                                <h3>HTML5</h3>
+                                                <div class="progress">
+                                                    <div class="percentage" style="width:98%;"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h3>CSS3</h3>
+                                                <div class="progress">
+                                                    <div class="percentage" style="width:98%;"></div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <h3>SASS</h3>
+                                                <div class="progress">
+                                                    <div class="percentage" style="width:98%;"></div>
+                                                </div>
+                                            </li>
                                             <li>
                                                 <h3>Javascript</h3>
                                                 <div class="progress">
@@ -306,41 +399,47 @@
                                                 </div>
                                             </li>
                                             <li>
-                                                <h3>HTML5</h3>
-                                                <div class="progress">
-                                                    <div class="percentage" style="width:90%;"></div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <h3>CSS3</h3>
+                                                <h3>Jquery</h3>
                                                 <div class="progress">
                                                     <div class="percentage" style="width:80%;"></div>
                                                 </div>
                                             </li>
+
                                             <li>
                                                 <h3>Bootstrap framework</h3>
                                                 <div class="progress">
-                                                    <div class="percentage" style="width:80%;"></div>
+                                                    <div class="percentage" style="width:98%;"></div>
                                                 </div>
                                             </li>
+
                                             <li>
                                                 <h3>React Js</h3>
                                                 <div class="progress">
-                                                    <div class="percentage" style="width:20%;"></div>
+                                                    <div class="percentage" style="width:80%;"></div>
                                                 </div>
                                             </li>
-                                            <li>
-                                                <h3>C#</h3>
-                                                <div class="progress">
-                                                    <div class="percentage" style="width:20%;"></div>
-                                                </div>
-                                            </li>
+
                                             <li>
                                                 <h3>Flutter - Dart</h3>
                                                 <div class="progress">
                                                     <div class="percentage" style="width:20%;"></div>
                                                 </div>
                                             </li>
+
+                                            <li>
+                                                <h3>C#</h3>
+                                                <div class="progress">
+                                                    <div class="percentage" style="width:80%;"></div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <h3>Java</h3>
+                                                <div class="progress">
+                                                    <div class="percentage" style="width:10%;"></div>
+                                                </div>
+                                            </li>
+
                                             <li>
                                                 <h3>PHP</h3>
                                                 <div class="progress">
@@ -371,34 +470,58 @@
                                                     <!-- a work -->
                                                     <li>
                                                         <h3 class="line-title">Website Manager | Creative Designer |
-                                                            Technical Support - <i>First Ally Capital</i></h3>
+                                                            Technical Support - <strong><i>First Ally
+                                                                    Capital</i></strong></h3>
                                                         <span>2019 - Present</span>
                                                         <p class="little-text">Managing <b>3 websites</b> under the
                                                             First Ally Group.<br>
                                                             Overseeing and designing all elements for the Financial
-                                                            Group, rendering technical IT support and solution while
-                                                            working with a digital team to build creative designs for
-                                                            media and
-                                                            websites.
+                                                            Group.<br>
+                                                            Rendering technical IT support and solution. [cctv coverage,
+                                                            internet connectivity, software and hardware issues and
+                                                            procurement
+                                                            for all technical related devices].<br>
+                                                            Designing corporate creatives for media and website.
                                                         </p>
                                                     </li>
                                                     <!-- a work -->
                                                     <li>
-                                                        <h3 class="line-title">Creative Designer - <i>Veritasi Homes</i>
+                                                        <h3 class="line-title">Creative Designer - <strong><i>Veritasi
+                                                                    Homes</i></strong>
                                                         </h3>
                                                         <span>2019</span>
-                                                        <p class="little-text">Studying design briefs and determine
-                                                            requirements.
-                                                            Scheduling projects and define budget constraints.<br>
-                                                            Conceptualizing visuals based on requirements.<br>
-                                                            Designing creative visuals for dital & social media.<br>
-                                                            Desiging brands for new projects.
+                                                        <p class="little-text">
+                                                            Studying design briefs and determine requirements.<br>
+                                                            Schedule projects and define budget constraints.<br>
+                                                            Conceptualize visuals based on requirements.<br>
+                                                            Ensuring the appropriate colours and layouts for all
+                                                            creatives.<br>
+                                                            Working with creative director to produce final design.<br>
+                                                            Designing creative visuals for social media.<br>
+                                                            Designing web pages, brochures, logos, signs, books,
+                                                            magazine
+                                                            covers, annual reports, advertisements, and other
+                                                            communication
+                                                            materials.
+                                                        </p>
+                                                    </li>
+                                                    <!-- a work -->
+                                                    <li>
+                                                        <h3 class="line-title">Creative Designer - <strong><i>SAandB
+                                                                    Mega Resources Limited.</i></strong>
+                                                        </h3>
+                                                        <span>3 Months Remote Contract | 2019</span>
+                                                        <p class="little-text">
+                                                            Studying design briefs and determine requirements.<br>
+                                                            Overseeing and designing all creatives contents for high
+                                                            visual
+                                                            output.
                                                         </p>
                                                     </li>
                                                     <!-- a work -->
                                                     <li>
                                                         <h3 class="line-title">Website Manager | Creative Designer -
-                                                            <i>Assist2Sell Properties Ltd.</i></h3>
+                                                            <strong><i>Assist2Sell Properties Ltd.</i></strong></h3>
                                                         <span>2018 - 2019</span>
                                                         <p class="little-text">
                                                             Managing company website and contents while Overseeing
@@ -410,8 +533,8 @@
                                                         </p>
                                                     </li>
                                                     <li>
-                                                        <h3 class="line-title">Senior Designer - <i>Doculand Business
-                                                                Solution</i></h3>
+                                                        <h3 class="line-title">Senior Creative Designer -
+                                                            <strong>Doculand Business Solution</strong></i></h3>
                                                         <span>2014 - 2018</span>
                                                         <p class="little-text">
                                                             Meet with clients or the art director to determine the scope
@@ -448,11 +571,47 @@
                                                             <i>(Republic of Benin)</i>
                                                         </p>
                                                     </li>
+                                                    <!-- educational cert -->
+                                                    <li>
+                                                        <h3 class="line-title">BSc Political Science</h3>
+                                                        <span>2011 - 2015</span>
+                                                        <p class="little-text">
+                                                            St. Augustine's College of Education.<br>
+                                                            <i>(Akoka, Lagos.)</i>
+                                                        </p>
+                                                    </li>
                                                     <!-- a Profesional cert -->
                                                     <li>
                                                         <h3 class="line-title"> Professional CERT.-
-                                                            <i>HTML5/CSS3/JAVASCRIPT/BOOTSTRAP/<br>JQUERY</i></h3>
-                                                        <span>2017 - 2020</span>
+                                                            <i>JAVASCRIPT</i></h3>
+                                                        <span>2020</span>
+                                                        <p class="little-text">
+                                                            UDEMY<br>
+                                                        </p>
+                                                    </li>
+                                                    <!-- a Profesional cert -->
+                                                    <li>
+                                                        <h3 class="line-title"> Professional CERT.-
+                                                            <i>C# FUNDAMENTALS</i></h3>
+                                                        <span>2020</span>
+                                                        <p class="little-text">
+                                                            UDEMY<br>
+                                                        </p>
+                                                    </li>
+                                                    <!-- a Profesional cert -->
+                                                    <li>
+                                                        <h3 class="line-title"> Professional CERT.-
+                                                            <i>HTML5/CSS3/JAVASCRIPT/BOOTSTRAP/<br>JQUERY/SASS</i></h3>
+                                                        <span>2020</span>
+                                                        <p class="little-text">
+                                                            UDEMY<br>
+                                                        </p>
+                                                    </li>
+                                                    <!-- a Profesional cert -->
+                                                    <li>
+                                                        <h3 class="line-title"> Professional CERT.-
+                                                            <i>Agile and Scrum 1-3</i></h3>
+                                                        <span>2020</span>
                                                         <p class="little-text">
                                                             UDEMY<br>
                                                         </p>
@@ -465,15 +624,6 @@
                                                         <p class="little-text">
                                                             ALISON<br>
 
-                                                        </p>
-                                                    </li>
-                                                    <!-- educational cert -->
-                                                    <li>
-                                                        <h3 class="line-title">BSc Political Science</h3>
-                                                        <span>2011 - 2015</span>
-                                                        <p class="little-text">
-                                                            St. Augustine's College of Education.<br>
-                                                            <i>(Akoka, Lagos.)</i>
                                                         </p>
                                                     </li>
                                                     <!-- a Profesional cert -->
@@ -497,6 +647,7 @@
                                                         </p>
                                                     </li>
                                                     <!-- educational cert -->
+                                                    <!--
                                                     <li>
                                                         <h3 class="line-title">WASSCE</h3>
                                                         <span>2004 - 2010</span>
@@ -505,6 +656,7 @@
                                                             <i>(Lagos.)</i>
                                                         </p>
                                                     </li>
+                                                    -->
                                                 </ul>
                                             </div>
                                         </div>
@@ -517,11 +669,6 @@
                                             <h2>Clients</h2>
                                         </div>
                                         <div class="row">
-                                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                                <div class="client">
-                                                    <img src="images/client-01.jpg" alt="">
-                                                </div>
-                                            </div>
                                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                                 <div class="client">
                                                     <img src="images/client-02.jpg" alt="">
@@ -537,170 +684,15 @@
                                                     <img src="images/client-04.jpg" alt="">
                                                 </div>
                                             </div>
-                                        </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                                <div class="client">
+                                                    <img src="images/client-05.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
                                     </section>
                                 </div>
-                                <!-- Testimonials -->
-                                <div class="row">
-                                    <section class="testimonials bottom_30">
-                                        <div class="section-title top_60 bottom_30"><span></span>
-                                            <h2>Testimonials</h2>
-                                        </div>
-                                        <div class="owl-carousel row" data-items="3" data-autoplay="3000"
-                                            data-pagination="true">
-                                            <!-- a item -->
-                                            <div class="col-md-12 item">
-                                                <div class="comment">
-                                                    <div class="top-section">
-                                                        <figure>
-                                                            <img src="images/testimonial-1.jpg" alt="">
-                                                        </figure>
-                                                        <div class="name-info">
-                                                            <span class="name">Jack Garratt</span>
-                                                            <span class="job">Freelancer</span>
-                                                        </div>
-                                                    </div>
-                                                    <hr>
-                                                    <p>Great designer! he finished our work wonderfully and just in
-                                                        time. thanks for everything.</p>
-                                                </div>
-                                            </div>
-                                            <!-- a item -->
-                                            <div class="col-md-12 item">
-                                                <div class="comment">
-                                                    <div class="top-section">
-                                                        <figure>
-                                                            <img src="images/testimonial-2.jpg" alt="">
-                                                        </figure>
-                                                        <div class="name-info">
-                                                            <span class="name">April M. Griffin</span>
-                                                            <span class="job">Founder</span>
-                                                        </div>
-                                                    </div>
-                                                    <hr>
-                                                    <p>Our logo and business card design look great. Thanks Henry</p>
-                                                </div>
-                                            </div>
-                                            <!-- a item -->
-                                            <div class="col-md-12 item">
-                                                <div class="comment">
-                                                    <div class="top-section">
-                                                        <figure>
-                                                            <img src="images/testimonial-3.jpg" alt="">
-                                                        </figure>
-                                                        <div class="name-info">
-                                                            <span class="name">Larry M. Johnson</span>
-                                                            <span class="job">Freelancer</span>
-                                                        </div>
-                                                    </div>
-                                                    <hr>
-                                                    <p>Henry is a very creative and talented designer. I do not hesitate
-                                                        to work again.</p>
-                                                </div>
-                                            </div>
-                                            <!-- a item -->
-                                            <div class="col-md-12 item">
-                                                <div class="comment">
-                                                    <div class="top-section">
-                                                        <figure>
-                                                            <img src="images/testimonial-1.jpg" alt="">
-                                                        </figure>
-                                                        <div class="name-info">
-                                                            <span class="name">Jack Garratt</span>
-                                                            <span class="job">Freelancer</span>
-                                                        </div>
-                                                    </div>
-                                                    <hr>
-                                                    <p>Great designer! he finished our work wonderfully and just in
-                                                        time. thanks for everything.</p>
-                                                </div>
-                                            </div>
-                                            <!-- a item -->
-                                            <div class="col-md-12 item">
-                                                <div class="comment">
-                                                    <div class="top-section">
-                                                        <figure>
-                                                            <img src="images/testimonial-2.jpg" alt="">
-                                                        </figure>
-                                                        <div class="name-info">
-                                                            <span class="name">April M. Griffin</span>
-                                                            <span class="job">Founder</span>
-                                                        </div>
-                                                    </div>
-                                                    <hr>
-                                                    <p>Our logo and business card design look great. Thanks Henry</p>
-                                                </div>
-                                            </div>
-                                            <!-- a item -->
-                                            <div class="col-md-12 item">
-                                                <div class="comment">
-                                                    <div class="top-section">
-                                                        <figure>
-                                                            <img src="images/testimonial-3.jpg" alt="">
-                                                        </figure>
-                                                        <div class="name-info">
-                                                            <span class="name">Larry M. Johnson</span>
-                                                            <span class="job">Freelancer</span>
-                                                        </div>
-                                                    </div>
-                                                    <hr>
-                                                    <p>Henry is a very creative and talented designer. I do not hesitate
-                                                        to work again.</p>
-                                                </div>
-                                            </div>
-                                            <!-- a item -->
-                                            <div class="col-md-12 item">
-                                                <div class="comment">
-                                                    <div class="top-section">
-                                                        <figure>
-                                                            <img src="images/testimonial-1.jpg" alt="">
-                                                        </figure>
-                                                        <div class="name-info">
-                                                            <span class="name">Jack Garratt</span>
-                                                            <span class="job">Freelancer</span>
-                                                        </div>
-                                                    </div>
-                                                    <hr>
-                                                    <p>Great designer! he finished our work wonderfully and just in
-                                                        time. thanks for everything.</p>
-                                                </div>
-                                            </div>
-                                            <!-- a item -->
-                                            <div class="col-md-12 item">
-                                                <div class="comment">
-                                                    <div class="top-section">
-                                                        <figure>
-                                                            <img src="images/testimonial-2.jpg" alt="">
-                                                        </figure>
-                                                        <div class="name-info">
-                                                            <span class="name">April M. Griffin</span>
-                                                            <span class="job">Founder</span>
-                                                        </div>
-                                                    </div>
-                                                    <hr>
-                                                    <p>Our logo and business card design look great. Thanks Henry</p>
-                                                </div>
-                                            </div>
-                                            <!-- a item -->
-                                            <div class="col-md-12 item">
-                                                <div class="comment">
-                                                    <div class="top-section">
-                                                        <figure>
-                                                            <img src="images/testimonial-3.jpg" alt="">
-                                                        </figure>
-                                                        <div class="name-info">
-                                                            <span class="name">Larry M. Johnson</span>
-                                                            <span class="job">Freelancer</span>
-                                                        </div>
-                                                    </div>
-                                                    <hr>
-                                                    <p>Henry is a very creative and talented designer. I do not hesitate
-                                                        to work again.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-                                </div>
+
                             </div>
                             <!-- Portfolio Page
             ================================================== -->
@@ -739,8 +731,7 @@
                                         </div>
                                         <!-- a video work -->
                                         <div class="cbp-item cbp-lightbox motion">
-                                            <a href="./portfolio-motion/art-motion.mp4" data-size="980x980"
-                                                class="cbp-lightbox">
+                                            <a href="./graphic-animation/graphic-animate1.html" class="cbp-singlePage">
                                                 <figure>
                                                     <div class="icon">
                                                         <i class="fa fa-play" aria-hidden="true"></i>
@@ -753,9 +744,10 @@
                                                 </figure>
                                             </a>
                                         </div>
+
                                         <!-- a video work -->
                                         <div class="cbp-item motion">
-                                            <a href="portfolio-motion/bdc-motion.mp4" class="cbp-lightbox">
+                                            <a href="/graphic-animation/graphic-animate2.html" class="cbp-singlePage">
                                                 <figure>
                                                     <div class="icon">
                                                         <i class="fa fa-play" aria-hidden="true"></i>
@@ -768,9 +760,10 @@
                                                 </figure>
                                             </a>
                                         </div>
+
                                         <!-- a video work -->
                                         <div class="cbp-item motion">
-                                            <a href="portfolio-motion/mothers-day.mp4" class="cbp-lightbox">
+                                            <a href="/graphic-animation/graphic-animate3.html" class="cbp-singlePage">
                                                 <figure>
                                                     <div class="icon">
                                                         <i class="fa fa-play" aria-hidden="true"></i>
@@ -785,7 +778,7 @@
                                         </div>
                                         <!-- a video work -->
                                         <div class="cbp-item motion">
-                                            <a href="portfolio-motion/womens-day.mp4" class="cbp-lightbox">
+                                            <a href="/graphic-animation/graphic-animate4.html" class="cbp-singlePage">
                                                 <figure>
                                                     <div class="icon">
                                                         <i class="fa fa-play" aria-hidden="true"></i>
@@ -800,15 +793,15 @@
                                         </div>
                                         <!-- a image work -->
                                         <div class="cbp-item cbp-lightbox photography">
-                                            <a href="images/works/work-06.jpg" class="cbp-lightbox">
+                                            <a href="/Ui-Ux designs/spender-ux.html" class="cbp-singlePage">
                                                 <figure>
                                                     <div class="icon">
-                                                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                                        <i class="fa fa-play" aria-hidden="true"></i>
                                                     </div>
-                                                    <img src="images/works/work-06.jpg" alt="">
+                                                    <img src="/Ui-Ux designs/spendr files/OTP vector.png" alt="">
                                                     <figcaption>
-                                                        <span class="title">Amazon Travel</span><br />
-                                                        <span class="info">Nature photography work.</span>
+                                                        <span class="title">Spendr</span><br />
+                                                        <span class="info">A video preview of the Spendr mobile app.</span>
                                                     </figcaption>
                                                 </figure>
                                             </a>
@@ -877,47 +870,70 @@
                                         </div>
                                         <!-- a work -->
                                         <div class="cbp-item illustration">
-                                            <a href="portfolio-detail/work-01.html" class="cbp-singlePage">
+                                            <a href="graphics/real-estate.html" class="cbp-singlePage">
                                                 <figure>
                                                     <div class="icon">
                                                         <i class="fa fa-clone" aria-hidden="true"></i>
                                                     </div>
-                                                    <img src="images/works/work-08.jpg" alt="">
+                                                    <img src="/graphics/real-estate/need a home for your family.png" alt="">
                                                     <figcaption>
-                                                        <span class="title">Exemag Wordpress Theme</span><br />
-                                                        <span class="info">Multiconcept Blog Theme.</span>
+                                                        <span class="title">Real Estate Creatives</span><br />
+                                                        <span class="info">Graphic design.</span>
                                                     </figcaption>
                                                 </figure>
                                             </a>
                                         </div>
                                         <!-- a work -->
+
+                                        <!--
                                         <div class="cbp-item illustration">
-                                            <a href="portfolio-detail/work-01.html" class="cbp-singlePage">
+                                            <a href="graphics/other-design-creatives/IMG_202011301518330.JPG" class="cbp-singlePage">
                                                 <figure>
                                                     <div class="icon">
                                                         <i class="fa fa-clone" aria-hidden="true"></i>
                                                     </div>
-                                                    <img src="images/works/work-09.jpg" alt="">
+                                                    <img src="graphics/other-design-creatives/IMG_202011301518330.JPG" alt="">
                                                     <figcaption>
-                                                        <span class="title">Babel Admin Html Code</span><br />
+                                                        <span class="title">Other Creatives</span><br />
                                                         <span class="info">An admin template design.</span>
                                                     </figcaption>
                                                 </figure>
                                             </a>
                                         </div>
+                                        -->
                                     </div>
                                     <!-- load more button -->
                                     <div id="js-loadMore-agency" class="cbp-l-loadMore-button top_30">
                                         <a href="load-more/portfolio.html" class="cbp-l-loadMore-link site-btn"
                                             rel="nofollow">
                                             <span class="cbp-l-loadMore-defaultText">Load More (<span
-                                                    class="cbp-l-loadMore-loadItems">3</span>)</span>
+                                                    class="cbp-l-loadMore-loadItems">10</span>)</span>
                                             <span class="cbp-l-loadMore-loadingText">Loading...</span>
                                             <span class="cbp-l-loadMore-noMoreLoading">No More Works</span>
                                         </a>
                                     </div>
                                 </section>
                             </div>
+
+
+
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                             <!-- Blog Page
             ================================================== -->
@@ -928,10 +944,10 @@
                                 <div class="row">
                                     <section class="clients col-md-12 padding_45 padbot_45">
                                         <div class="section-title bottom_30"><span></span>
-                                            <h2>Clients</h2>
+                                            <h2>Contracted freelance</h2>
                                         </div>
                                         <div class="row">
-                                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 img-container1">
+                                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                                 <div class="client">
                                                     <img src="images/client-02.jpg" alt="Aef Energy">
                                                 </div>
@@ -1006,6 +1022,11 @@
                                                     <img src="images/client-16.jpg" alt="">
                                                 </div>
                                             </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                                <div class="client">
+                                                    <img src="images/client-17.jpg" alt="">
+                                                </div>
+                                            </div>
 
                                         </div>
                                     </section>
@@ -1028,17 +1049,41 @@
                                                     <input class="site-input" placeholder="Name">
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <input class="site-input" placeholder="E-mail">
+                                                    <input class="site-email" placeholder="E-mail">
                                                 </div>
                                                 <div class="col-md-12">
                                                     <textarea class="site-area" placeholder="Message"></textarea>
                                                 </div>
                                                 <div class="col-md-12 top_15 bottom_30">
-                                                    <button class="site-btn" type="submit">Submit</button>
+                                                    <button class="site-btn" type="submit" id="send-btn">Submit</button>
                                                 </div>
                                             </div>
+
                                         </form>
+
+
+                                        <div role="alert" aria-live="assertive" aria-atomic="true"
+                                            class="toast pop-up-window message-sent" id="pop-up-window"
+                                            data-autohide="true">
+                                            <div class="toast-header">
+                                                <img src="/favicon-32x32.png" class="rounded mr-2" alt="...">
+                                                <strong class="mr-auto">Message sent</strong>
+                                                <!--<small>11 mins ago</small>-->
+                                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast"
+                                                    aria-label="Close" id="tiny-close-btn">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <div id="tiny-line"></div>
+                                            </div>
+
+                                            <div class="toast-body">
+                                                <p>Thanks. I would contact you shortly</p>
+                                            </div>
+                                        </div>
+
                                     </section>
+
+
                                     <!-- Contact Informations -->
                                     <section class="contact-info col-md-6 padding_30 padbot_45">
                                         <div class="section-title top_15 bottom_30"><span></span>
@@ -1084,13 +1129,23 @@
                         </div><!-- Content - End -->
                     </div> <!-- col-md-12 end -->
                 </div><!-- row end -->
+
+                
+                <!-- Our Story Section -->
+
+
+
+
+
+
+
                 <!-- Footer
 ================================================== -->
                 <footer>
                     <div class="footer col-md-12 top_30 bottom_30">
                         <div class="name col-md-4 hidden-md hidden-sm hidden-xs">Victor Itah.</div>
-                        <div class="copyright col-lg-8 col-md-12">© 2017 All rights reserved. Designed by <a
-                                href="http://v-tech.com.ng/">V-technologies</a> </div>
+                        <div class="copyright col-lg-8 col-md-12">© 2020 All rights reserved. Designed by <a
+                                href="http://v-tech.com.ng/" target="_blank">victor-itah</a> </div>
                     </div>
                 </footer>
 
@@ -1100,14 +1155,25 @@
 
     <!-- Javascripts
 ================================================== -->
+
+<!--
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+-->
+
+
+
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.easytabs.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/FileSaver.min.js"></script>
     <!-- for color alternatives -->
     <script src="js/jquery.cookie-1.4.1.min.js"></script>
+
     <!-- <script src="js/Demo.js"></script> -->
     <link rel="stylesheet" href="css/Demo.min.css" />
 

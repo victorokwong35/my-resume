@@ -162,7 +162,7 @@ input[type="search"] {
 }
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
+  -webkit-appearance: none;q
 }
 fieldset {
   padding: .35em .625em .75em;
