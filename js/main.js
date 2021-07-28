@@ -185,6 +185,8 @@ $(document).ready(function () {
     });
   
   });
+
+
   
   $("#tiny-close-btn").click(function (e) {
     $("#pop-up-window").css({"display": "none"});
