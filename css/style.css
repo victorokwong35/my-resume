@@ -382,9 +382,8 @@ h6{
 
 .profile-image img{
     width: 120%;
-    margin-left: -18px;
-   
-    
+    margin-left: -18px; 
+    margin-top: 10px;
 }
 
 ul.profile-information{

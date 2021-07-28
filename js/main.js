@@ -178,6 +178,150 @@ $(document).ready(function () {
   });
 
 
+  loadScript("/js/constant.js", myCallback);
+
+}); // document ready end
+
+function loadScript(url, callback)
+{
+    // Adding the script tag to the head as suggested before
+    
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = url;
+
+    // Then bind the event to the callback function.
+    // There are several events for cross browser compatibility.
+    script.onreadystatechange = callback;
+    script.onload = callback;
+
+    // Fire the loading
+   // head.appendChild(script);
+    document.body.appendChild(script);
+}
+
+
+var myCallback = function() {
+  
+  setupFirebase();
+   
+};
+
+
+  
+
+
+//Contact section
+
+
+//NEW LINE JS
+/*
+$(document).ready(function() {
+
+  document.querySelector(".site-form").addEventListener("submit", submitForm);
+  
+  function submitForm(e) {
+    e.preventDefault();
+
+    let name = document.querySelector(".input-name").value;
+    let email = document.querySelector(".input-email").value;
+    let message = document.querySelector(".input-message").value;
+
+    saveContactInfo(name, email, message);
+
+    document.saveContactInfo(".site-form").reset();
+
+    sendEmail(name, email, message);
+
+    
+
+  }
+
+  // save infos to firebase
+  function saveContactInfo(name, email, message) {
+    let newContactInfo = contactInfo.push();
+
+    newContactInfo.set({
+      Name: name,
+      Email: email,
+      Message: message,
+
+    });
+  }
+
+  retrieveInfos();
+
+  //send email info
+  function sendEmail(name, email, message) {
+    Email.send({
+      Host: "smtp.gmail.com",
+      Username: 'victor.resume35@gmail.com',
+      Password: "selepqjumlcmaxes",
+      To: 'victorokwong35@gmail.com',
+      From: 'victor.resume35@gmail.com',
+      Subject: `${name} sent you a message`,
+      Body: `Name: ${name} <br> Email: ${email} <br> Message: ${message}`
+      
+    });
+  }
+  
+}); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+$(document).ready(function() {
+
+  document.querySelector("#main-form").addEventListener("submit", submitForm);
+  
+  function submitForm(params) {
+    
+
+    let name = document.querySelector(".input-name").value;
+    let email = document.querySelector(".input-email").value;
+    let message = document.querySelector(".input-message").value;
+
+    saveContactInfo(name, email, message);
+
+  }
+
+  // save infos to firebase
+  function saveContactInfo(name, email, message) {
+    let newContactInfo = contactInfo.push();
+
+    newContactInfo.set({
+      name: name,
+      email: email,
+      message: message,
+    });
+  }
+  
+});
+
+
+*/
+
+
+/*
 
   $("#send-btn").click(function() {
     $("#pop-up-window").css({
@@ -185,8 +329,6 @@ $(document).ready(function () {
     });
   
   });
-
-
   
   $("#tiny-close-btn").click(function (e) {
     $("#pop-up-window").css({"display": "none"});
@@ -195,40 +337,6 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}); // document ready end
-
-//Contact section
-
-
-
-
-
-/*
 var inputData = (function() {  
     return {
         getInput: function() {
@@ -282,3 +390,5 @@ var keyPress = document.addEventListener("keypress", function () {
 */
 
 // window load end
+
+
