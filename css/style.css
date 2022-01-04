@@ -1785,6 +1785,29 @@ footer .footer .copyright a:hover{
     border: none;
 }
 
+.achievements {
+    color: #ff5a14;
+}
+
+.achievements_paragraph {
+    font-style: none;
+    font-size: 12px;
+    line-height: inherit;
+}
+
+.promotion {
+    width: 120px;
+    height: 30px;
+    background-color: rgb(126, 202, 50);
+    padding: 3px 0 1px 9px;
+    border-radius: 4px;
+}
+
+.promotion > p {
+    color: white;
+    font-weight: 700;
+}
+
 
 #pop-up-window {
     display: none;
